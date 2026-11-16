@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Argentino | Primera División</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos específicos basados en el formato Promiedos de las imágenes */
+        .seccion-titulo-promiedos {
+            background-color: var(--azul);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0;
+            box-shadow: var(--sombra);
+        }
+        
+        .tablas-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+        @media (max-width: 1000px) {
+            .tablas-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tabla-promiedos {
+            background: white;
+            border-radius: 0 0 12px 12px;
+            box-shadow: var(--sombra);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .tabla-promiedos table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        .tabla-promiedos th, .tabla-promiedos td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--borde);
+        }
+        
+        .tabla-promiedos th {
+            background: #12324a;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Colores de referencia de posiciones según capturas */
+        .pos-octavos { background-color: var(--celeste) !important; color: var(--azul); font-weight: bold; }
+        .pos-libertadores { background-color: #27ae60 !important; color: white; font-weight: bold; }
+
+        .referencias {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--sombra);
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+        .punto-ref {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-contenido">
+        <div class="logo">FÚTBOL <span>ARGENTINO</span></div>
+        <div>Primera División</div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-contenido">
+        <a href="index.html">Inicio</a>
+        <a class="activo" href="primera.html">Primera División</a>
+        <a href="copas.html">Copa Argentina</a>
+        <a href="supercopas.html">Supercopas</a>
+        <a href="ascenso.html">Ascenso / Primera Nacional</a>
+        <a href="historicos.html">Históricos</a>
+    </div>
+</nav>
+
+<main>
+    <section class="hero">
+        <h1>Primera División - Torneo Clausura y Tabla Anual</h1>
+        <p>Seguimiento detallado de los grupos de la máxima categoría y la tabla acumulada anual con formato oficial estilo Promiedos.</p>
+    </section>
+
+    <!-- GRUPO A Y GRUPO B LADO A LADO -->
+    <div class="tablas-container">
+        
+        <!-- GRUPO A -->
+        <div>
+            <div class="seccion-titulo-promiedos">CLAUSURA - GRUPO A</div>
+            <div class="tabla-promiedos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Equipos</th>
+                            <th>PTS</th>
+                            <th>J</th>
+                            <th>Gol</th>
+                            <th>+/-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pos-octavos"><td>1</td><td>Instituto</td><td>34</td><td>16</td><td>26:15</td><td>11</td></tr>
+                        <tr class="pos-octavos"><td>2</td><td>Boca Jrs.</td><td>33</td><td>16</td><td>24:14</td><td>10</td></tr>
+                        <tr class="pos-octavos"><td>3</td><td>Vélez</td><td>28</td><td>16</td><td>25:17</td><td>8</td></tr>
+                        <tr class="pos-octavos"><td>4</td><td>Defensa</td><td>28</td><td>16</td><td>21:15</td><td>6</td></tr>
+                        <tr class="pos-octavos"><td>5</td><td>Lanús</td><td>26</td><td>16</td><td>19:12</td><td>7</td></tr>
+                        <tr class="pos-octavos"><td>6</td><td>Newell's</td><td>23</td><td>16</td><td>16:13</td><td>3</td></tr>
+                        <tr class="pos-octavos"><td>7</td><td>Independiente</td><td>23</td><td>16</td><td>15:16</td><td>-1</td></tr>
+                        <tr class="pos-octavos"><td>8</td><td>Gimnasia y Esgrima</td><td>22</td><td>16</td><td>18:17</td><td>1</td></tr>
+                        <tr><td>9</td><td>Unión</td><td>21</td><td>16</td><td>24:24</td><td>0</td></tr>
+                        <tr><td>10</td><td>Platense</td><td>20</td><td>16</td><td>18:20</td><td>-2</td></tr>
+                        <tr><td>11</td><td>San Lorenzo</td><td>19</td><td>16</td><td>9:16</td><td>-7</td></tr>
+                        <tr><td>12</td><td>Estudiantes</td><td>16</td><td>16</td><td>21:22</td><td>-1</td></tr>
+                        <tr><td>13</td><td>Talleres</td><td>13</td><td>16</td><td>17:23</td><td>-6</td></tr>
+                        <tr><td>14</td><td>Riestra</td><td>12</td><td>16</td><td>11:19</td><td>-8</td></tr>
+                        <tr><td>15</td><td>Central Córdoba</td><td>11</td><td>16</td><td>12:26</td><td>-14</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- GRUPO B -->
+        <div>
+            <div class="seccion-titulo-promiedos">CLAUSURA - GRUPO B</div>
+            <div class="tabla-promiedos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Equipos</th>
+                            <th>PTS</th>
+                            <th>J</th>
+                            <th>Gol</th>
+                            <th>+/-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pos-octavos"><td>1</td><td>Central</td><td>34</td><td>16</td><td>26:12</td><td>14</td></tr>
+                        <tr class="pos-octavos"><td>2</td><td>Argentinos</td><td>31</td><td>16</td><td>20:14</td><td>6</td></tr>
+                        <tr class="pos-octavos"><td>3</td><td>Gimnasia y Esgrima</td><td>31</td><td>16</td><td>25:20</td><td>5</td></tr>
+                        <tr class="pos-octavos"><td>4</td><td>River</td><td>26</td><td>16</td><td>21:14</td><td>7</td></tr>
+                        <tr class="pos-octavos"><td>5</td><td>Barracas</td><td>26</td><td>16</td><td>17:13</td><td>4</td></tr>
+                        <tr class="pos-octavos"><td>6</td><td>Belgrano</td><td>23</td><td>16</td><td>17:15</td><td>2</td></tr>
+                        <tr class="pos-octavos"><td>7</td><td>Independiente Rivadavia</td><td>23</td><td>16</td><td>21:24</td><td>-3</td></tr>
+                        <tr class="pos-octavos"><td>8</td><td>Huracán</td><td>22</td><td>16</td><td>14:16</td><td>-2</td></tr>
+                        <tr><td>9</td><td>Sarmiento</td><td>21</td><td>16</td><td>23:24</td><td>-1</td></tr>
+                        <tr><td>10</td><td>Tigre</td><td>19</td><td>16</td><td>16:16</td><td>0</td></tr>
+                        <tr><td>11</td><td>Atl. Tucumán</td><td>18</td><td>16</td><td>16:17</td><td>-1</td></tr>
+                        <tr><td>12</td><td>Banfield</td><td>15</td><td>16</td><td>18:25</td><td>-7</td></tr>
+                        <tr><td>13</td><td>Racing</td><td>15</td><td>16</td><td>16:24</td><td>-8</td></tr>
+                        <tr><td>14</td><td>Aldosivi</td><td>11</td><td>16</td><td>16:26</td><td>-10</td></tr>
+                        <tr><td>15</td><td>Estudiantes</td><td>9</td><td>16</td><td>10:23</td><td>-13</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- REFERENCIAS -->
+    <div class="referencias">
+        <div><span class="punto-ref" style="background: var(--celeste);"></span> <strong>Octavos de Final</strong></div>
+    </div>
+
+    <!-- TABLA ANUAL -->
+    <div class="seccion-titulo-promiedos" style="border-radius: 8px 8px 0 0; margin-top: 20px;">TABLA ANUAL</div>
+    <div class="tabla-promiedos" style="margin-bottom: 40px;">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Equipos</th>
+                    <th>PTS</th>
+                    <th>J</th>
+                    <th>Gol</th>
+                    <th>+/-</th>
+                    <th>G</th>
+                    <th>E</th>
+                    <th>P</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="pos-libertadores"><td>1</td><td>Boca Jrs.</td><td>63</td><td>32</td><td>46:23</td><td>23</td><td>17</td><td>12</td><td>3</td></tr>
+                <tr class="pos-libertadores"><td>2</td><td>Central</td><td>62</td><td>32</td><td>46:28</td><td>18</td><td>18</td><td>8</td><td>6</td></tr>
+                <tr class="pos-libertadores"><td>3</td><td>Argentinos</td><td>60</td><td>32</td><td>37:27</td><td>10</td><td>17</td><td>9</td><td>6</td></tr>
+                <tr><td>4</td><td>Independiente Rivadavia</td><td>57</td><td>32</td><td>50:39</td><td>11</td><td>16</td><td>9</td><td>7</td></tr>
+                <tr><td>5</td><td>Gimnasia y Esgrima</td><td>57</td><td>32</td><td>44:39</td><td>5</td><td>17</td><td>6</td><td>9</td></tr>
+                <tr><td>6</td><td>Vélez</td><td>56</td><td>32</td><td>43:29</td><td>14</td><td>14</td><td>14</td><td>4</td></tr>
+                <tr><td>7</td><td>River</td><td>55</td><td>32</td><td>43:26</td><td>17</td><td>17</td><td>4</td><td>11</td></tr>
+                <tr><td>8</td><td>Instituto</td><td>55</td><td>32</td><td>43:32</td><td>11</td><td>16</td><td>7</td><td>9</td></tr>
+                <tr><td>9</td><td>Lanús</td><td>50</td><td>32</td><td>37:27</td><td>10</td><td>13</td><td>11</td><td>8</td></tr>
+                <tr><td>10</td><td>Belgrano</td><td>49</td><td>32</td><td>34:28</td><td>6</td><td>13</td><td>10</td><td>9</td></tr>
+                <tr><td>11</td><td>Estudiantes</td><td>47</td><td>32</td><td>40:29</td><td>11</td><td>13</td><td>8</td><td>11</td></tr>
+                <tr><td>12</td><td>Barracas</td><td>47</td><td>32</td><td>32:28</td><td>4</td><td>12</td><td>11</td><td>9</td></tr>
+                <tr><td>13</td><td>Defensa</td><td>47</td><td>32</td><td>39:36</td><td>3</td><td>12</td><td>11</td><td>9</td></tr>
+                <tr><td>14</td><td>Independiente</td><td>47</td><td>32</td><td>39:36</td><td>3</td><td>12</td><td>11</td><td>9</td></tr>
+                <tr><td>15</td><td>Huracán</td><td>44</td><td>32</td><td>31:29</td><td>2</td><td>11</td><td>11</td><td>10</td></tr>
+                <tr><td>16</td><td>Unión</td><td>42</td><td>32</td><td>48:44</td><td>4</td><td>11</td><td>9</td><td>12</td></tr>
+                <tr><td>17</td><td>Gimnasia y Esgrima</td><td>41</td><td>32</td><td>32:39</td><td>-7</td><td>11</td><td>8</td><td>13</td></tr>
+                <tr><td>18</td><td>San Lorenzo</td><td>41</td><td>32</td><td>23:30</td><td>-7</td><td>10</td><td>11</td><td>11</td></tr>
+                <tr><td>19</td><td>Sarmiento</td><td>40</td><td>32</td><td>36:44</td><td>-8</td><td>12</td><td>4</td><td>16</td></tr>
+                <tr><td>20</td><td>Tigre</td><td>39</td><td>32</td><td>34:31</td><td>3</td><td>9</td><td>12</td><td>11</td></tr>
+                <tr><td>21</td><td>Talleres</td><td>39</td><td>32</td><td>34:36</td><td>-2</td><td>10</td><td>9</td><td>13</td></tr>
+                <tr><td>22</td><td>Newell's</td><td>38</td><td>32</td><td>31:40</td><td>-9</td><td>8</td><td>14</td><td>10</td></tr>
+                <tr><td>23</td><td>Racing</td><td>36</td><td>32</td><td>33:39</td><td>-6</td><td>9</td><td>9</td><td>14</td></tr>
+                <tr><td>24</td><td>Platense</td><td>36</td><td>32</td><td>28:35</td><td>-7</td><td>8</td><td>12</td><td>12</td></tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <strong>Fútbol Argentino</strong>
+    <p>Proyecto final de Software</p>
+</footer>
+</body>
+</html>

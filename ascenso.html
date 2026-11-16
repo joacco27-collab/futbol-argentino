@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Argentino | Primera Nacional</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos específicos para las tablas de posiciones y cuadros tipo Promiedos */
+        .tablas-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 1000px) {
+            .tablas-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .tabla-promiedos {
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--sombra);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .tabla-promiedos h3 {
+            background: var(--azul);
+            color: white;
+            padding: 14px 16px;
+            font-size: 18px;
+            margin: 0;
+        }
+        .tabla-promiedos table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .tabla-promiedos th, .tabla-promiedos td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--borde);
+        }
+        .tabla-promiedos th {
+            background: #eaf8ff;
+            color: var(--azul);
+            font-weight: bold;
+        }
+        /* Referencias de colores de posiciones */
+        .pos-final { background-color: #75bfe8 !important; color: var(--azul); font-weight: bold; }
+        .pos-playoff { background-color: #d1b3ff !important; color: #3b145a; }
+        .pos-descenso { background-color: #ffcccc !important; color: #800000; font-weight: bold; }
+        
+        .seccion-cuadro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: var(--sombra);
+            margin-bottom: 30px;
+        }
+        .seccion-cuadro h2 {
+            margin-bottom: 15px;
+            color: var(--azul);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-contenido">
+        <div class="logo">FÚTBOL <span>ARGENTINO</span></div>
+        <div>Primera Nacional</div>
+    </div>
+</header>
+<nav><div class="nav-contenido">
+<a href="index.html">Inicio</a>
+<a href="primera.html">Primera División</a>
+<a href="copas.html">Copas Nacionales</a>
+<a href="supercopas.html">Supercopas</a>
+<a href="internacionales.html">Internacionales</a>
+<a class="activo" href="ascenso.html">Ascenso / Primera Nacional</a>
+<a href="historicos.html">Históricos</a>
+</div></nav>
+<main>
+<section class="hero">
+    <h1>Primera Nacional</h1>
+    <p>Tablas de posiciones de la Zona A y Zona B, junto con el desarrollo de la fase de eliminatorias al estilo Promiedos.</p>
+</section>
+
+<!-- ZONA A Y ZONA B -->
+<div class="tablas-container">
+    <!-- ZONA A -->
+    <div class="tabla-promiedos">
+        <h3>ZONA A</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Equipos</th>
+                    <th>PTS</th>
+                    <th>J</th>
+                    <th>Gol</th>
+                    <th>+/-</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="pos-final"><td>1</td><td>Godoy Cruz</td><td>66</td><td>36</td><td>53:33</td><td>20</td></tr>
+                <tr class="pos-final"><td>2</td><td>Ferro</td><td>66</td><td>36</td><td>38:31</td><td>7</td></tr>
+                <tr class="pos-playoff"><td>3</td><td>Morón</td><td>61</td><td>36</td><td>53:37</td><td>16</td></tr>
+                <tr class="pos-playoff"><td>4</td><td>Dep. Madryn</td><td>60</td><td>36</td><td>52:31</td><td>21</td></tr>
+                <tr class="pos-playoff"><td>5</td><td>Colón</td><td>60</td><td>36</td><td>45:27</td><td>18</td></tr>
+                <tr class="pos-playoff"><td>6</td><td>Alte. Brown</td><td>51</td><td>36</td><td>30:26</td><td>4</td></tr>
+                <tr class="pos-playoff"><td>7</td><td>Ciudad De Bolívar</td><td>51</td><td>36</td><td>30:33</td><td>-3</td></tr>
+                <tr class="pos-playoff"><td>8</td><td>Estudiantes</td><td>49</td><td>36</td><td>35:35</td><td>0</td></tr>
+                <tr><td>9</td><td>Chaco For Ever</td><td>46</td><td>36</td><td>39:37</td><td>2</td></tr>
+                <tr><td>10</td><td>Los Andes</td><td>43</td><td>36</td><td>27:26</td><td>1</td></tr>
+                <tr><td>11</td><td>All Boys</td><td>41</td><td>36</td><td>22:30</td><td>-8</td></tr>
+                <tr><td>12</td><td>San Telmo</td><td>41</td><td>36</td><td>30:41</td><td>-11</td></tr>
+                <tr><td>13</td><td>CA Mitre</td><td>40</td><td>36</td><td>31:42</td><td>-11</td></tr>
+                <tr><td>14</td><td>Racing (Cba)</td><td>40</td><td>36</td><td>32:45</td><td>-13</td></tr>
+                <tr><td>15</td><td>Defensores</td><td>39</td><td>36</td><td>25:34</td><td>-9</td></tr>
+                <tr><td>16</td><td>Central Norte</td><td>38</td><td>36</td><td>23:32</td><td>-9</td></tr>
+                <tr class="pos-descenso"><td>17</td><td>Acassuso</td><td>35</td><td>36</td><td>25:35</td><td>-10</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ZONA B -->
+    <div class="tabla-promiedos">
+        <h3>ZONA B</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Equipos</th>
+                    <th>PTS</th>
+                    <th>J</th>
+                    <th>Gol</th>
+                    <th>+/-</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="pos-final"><td>1</td><td>Tristán Suárez</td><td>64</td><td>36</td><td>34:16</td><td>18</td></tr>
+                <tr class="pos-playoff"><td>2</td><td>Atlanta</td><td>62</td><td>36</td><td>42:34</td><td>8</td></tr>
+                <tr class="pos-playoff"><td>3</td><td>Temperley</td><td>61</td><td>36</td><td>43:31</td><td>12</td></tr>
+                <tr class="pos-playoff"><td>4</td><td>Gimnasia y Esgrima</td><td>58</td><td>36</td><td>53:49</td><td>4</td></tr>
+                <tr class="pos-playoff"><td>5</td><td>Midland</td><td>55</td><td>36</td><td>43:29</td><td>14</td></tr>
+                <tr class="pos-playoff"><td>6</td><td>Maipú</td><td>52</td><td>36</td><td>43:34</td><td>9</td></tr>
+                <tr class="pos-playoff"><td>7</td><td>Colegiales</td><td>52</td><td>36</td><td>36:32</td><td>4</td></tr>
+                <tr class="pos-playoff"><td>8</td><td>Gimnasia y Tiro</td><td>52</td><td>36</td><td>37:35</td><td>2</td></tr>
+                <tr><td>9</td><td>San Martín</td><td>51</td><td>36</td><td>42:36</td><td>6</td></tr>
+                <tr><td>10</td><td>San Martín (T)</td><td>47</td><td>36</td><td>39:37</td><td>2</td></tr>
+                <tr><td>11</td><td>Atlético Rafaela</td><td>47</td><td>36</td><td>29:35</td><td>-6</td></tr>
+                <tr><td>12</td><td>Agropecuario</td><td>46</td><td>36</td><td>31:39</td><td>-8</td></tr>
+                <tr><td>13</td><td>Quilmes</td><td>45</td><td>36</td><td>33:30</td><td>3</td></tr>
+                <tr><td>14</td><td>Chacarita</td><td>42</td><td>36</td><td>29:35</td><td>-6</td></tr>
+                <tr><td>15</td><td>Almagro</td><td>42</td><td>36</td><td>33:44</td><td>-11</td></tr>
+                <tr><td>16</td><td>Patronato</td><td>38</td><td>36</td><td>29:35</td><td>-6</td></tr>
+                <tr class="pos-descenso"><td>17</td><td>Chicago</td><td>37</td><td>36</td><td>25:36</td><td>-11</td></tr>
+                <tr class="pos-descenso"><td>18</td><td>Güemes</td><td>27</td><td>36</td><td>28:62</td><td>-34</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- CUADRO REDUCIDO / FASE ELIMINATORIA -->
+<section class="seccion-cuadro">
+    <h2>Cuadro Reducido - Fase Eliminatoria</h2>
+    <p style="color: var(--gris-texto); margin-bottom: 15px;">Seguimiento de los cruces de playoff por el ascenso.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+        <div style="background: #f4fbff; padding: 15px; border-radius: 8px; border: 1px solid var(--borde);">
+            <h4 style="font-size: 14px; color: var(--azul); margin-bottom: 10px;">Primera Fase</h4>
+            <p style="font-size: 13px;">Colón 1 - 0 Midland</p>
+            <p style="font-size: 13px;">Ferro 0 - 1 Gimnasia y Tiro</p>
+            <p style="font-size: 13px;">Temperley 1 - 2 Ciudad de Bolívar</p>
+        </div>
+        <div style="background: #f4fbff; padding: 15px; border-radius: 8px; border: 1px solid var(--borde);">
+            <h4 style="font-size: 14px; color: var(--azul); margin-bottom: 10px;">Cuartos de Final</h4>
+            <p style="font-size: 13px;">Tristán Suárez vs Gimnasia y Tiro</p>
+            <p style="font-size: 13px;">Atlanta vs Ciudad de Bolívar</p>
+            <p style="font-size: 13px;">Deportivo Morón vs Colón</p>
+        </div>
+        <div style="background: #f4fbff; padding: 15px; border-radius: 8px; border: 1px solid var(--borde);">
+            <h4 style="font-size: 14px; color: var(--azul); margin-bottom: 10px;">Semifinales y Final</h4>
+            <p style="font-size: 13px;"><strong>Semifinal:</strong> A confirmar</p>
+            <p style="font-size: 13px;"><strong>FINAL:</strong> A confirmar 🏆</p>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer><strong>Fútbol Argentino</strong><p>Proyecto final de Software</p></footer>
+</body>
+</html>
